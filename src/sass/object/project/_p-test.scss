@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-test {
+  color: red;
+  font-size: rem(25);
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}

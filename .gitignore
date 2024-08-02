@@ -1,0 +1,5 @@
+dist/assets/css/styles.css
+dist/assets/css/styles.css.map
+dist/assets/images/
+node_modules/
+package-lock.json

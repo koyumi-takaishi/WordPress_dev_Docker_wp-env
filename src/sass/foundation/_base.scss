@@ -1,0 +1,43 @@
+@use "global" as *;
+
+// インナー幅＋余白
+$breakpointInner: $innerWidth + strip-unit($padding-pc) * 2;
+
+// ルートフォント設定
+html {
+  // 376px ~ 767px
+  font-size: 100%;
+
+  // ~ 375px
+  @media (max-width: 375px) {
+    font-size: vw(375, 16);
+  }
+
+  // 768px ~ インナー幅＋余白
+  @include mq(md) {
+    font-size: vw(strip-unit($breakpointInner), 16);
+  }
+
+  // インナー幅＋余白 ~
+  @media ( min-width: $breakpointInner ) {
+    font-size: 100%;
+  }
+}
+
+// フォント、カラー設定
+body {
+  font-family: $font-main;
+  color: $black;
+}
+
+// ホバー
+a,
+button {
+  @include mq(md) {
+    transition: .3s;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+}

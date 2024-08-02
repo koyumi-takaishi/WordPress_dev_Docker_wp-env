@@ -33,6 +33,7 @@ __1人での開発の場合は任意のタイミングで手順3と4を行えば
 - sassの記述はsrcフォルダの中で行う
 - 画像はsrcフォルダのimagesの中に格納する
 - phpとjsはdist直下のファイルに直接記述する
+- プラグインは管理画面からインストールするとdist/assets/pluginsに自動的に格納される
 
 ## よく使うコマンドまとめ
 - wp-env起動 `npm run wp-env start`  
@@ -46,4 +47,4 @@ __1人での開発の場合は任意のタイミングで手順3と4を行えば
 ## 備考
 - CSS設計はFLOCSS(https://github.com/hiloki/flocss )を採用
 - スマホファースト
-- rem記述を前提# gulp-dev_wp-env_flocss_SPtoPC
+- rem記述を前提
