@@ -27,7 +27,7 @@ __1人での開発の場合は任意のタイミングで手順3と4を行えば
 ## .wp-env.jsonを書き換えたときの手順
 1. wp-envを停止 `npm run wp-env stop`
 2. アプデした状態で再起動 `npm run wp-env start --update`
-- ポート番号を変更した場合は、gulpfile.jsの22行目を書き換えるひ必要あり
+- ポート番号を変更した場合は、gulpfile.jsの22行目を書き換える必要あり
 
 ## 作業ディレクトリについて
 - sassの記述はsrcフォルダの中で行う
