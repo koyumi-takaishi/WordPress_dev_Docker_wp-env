@@ -13,7 +13,7 @@
 5. node_modulesとpackage-lock.jsonが生成されるのを確認する
 6. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
 7. `npx gulp`とコマンドを入力するとgulpが動き出す
-8. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更
+8. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更（初期ユーザー名`admin`、初期パス`password`）
 
 ## データベース更新するときの手順
 __1人での開発の場合は任意のタイミングで手順3と4を行えばOK__
