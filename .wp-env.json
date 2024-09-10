@@ -14,7 +14,7 @@
   },
   "mappings": {
     "wp-content/themes/themeName/": "./dist/",
-    "wp-content/plugins/": "./dist/plugins/",
+    "wp-content/plugins/": "./plugins/",
     "sql": "./sql"
   }
 }
