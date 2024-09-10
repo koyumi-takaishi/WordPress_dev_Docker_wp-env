@@ -7,8 +7,8 @@
 
 ## 使い方
 1. クローンorダウンロードしたフォルダをvscode等で開く
-2. .wp-env.jsonの16行目のthemeNameを任意のテーマ名に変更
-3. style.cssの中身を任意の内容に変更する
+~~2. .wp-env.jsonの16行目のthemeNameを任意のテーマ名に変更~~
+~~3. style.cssの中身を任意の内容に変更する~~
 4. ターミナルを開き、`npm i`とコマンドを入力
 5. node_modulesとpackage-lock.jsonが生成されるのを確認する
 6. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
