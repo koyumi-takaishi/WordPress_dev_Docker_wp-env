@@ -5,15 +5,24 @@
 - Gulp 4系
 - Dockerインストール済み
 
-## 使い方
+## 使い方（ゼロからローカル環境構築を始める場合）
 1. クローンorダウンロードしたフォルダをvscode等で開く
 2. .wp-env.jsonの16行目のthemeNameを任意のテーマ名に変更
 3. style.cssの中身を任意の内容に変更する
 4. ターミナルを開き、`npm i`とコマンドを入力
 5. node_modulesとpackage-lock.jsonが生成されるのを確認する
 6. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
-7. `npx gulp`とコマンドを入力するとgulpが動き出す
+7. `npx gulp`とコマンドを入力するとgulpが動き出す（gulpはブラウザシンク、scssコンパイル、画像圧縮の役割を担っている）
 8. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更（初期ユーザー名`admin`、初期パス`password`）
+
+## 使い方（既に開発が進んでいる状態からローカル環境構築を始める場合）
+1. クローンorダウンロードしたフォルダをvscode等で開く
+2. ターミナルを開き、`npm i`とコマンドを入力
+3. node_modulesとpackage-lock.jsonが生成されるのを確認する
+4. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
+5. データベースをインポートする`npm run wp-env run cli wp db import sql/wpenv.sql`
+6. `npx gulp`とコマンドを入力するとgulpが動き出す（gulpはブラウザシンク、scssコンパイル、画像圧縮の役割を担っている）
+7. WordPressの管理画面（/wp-admin）に入り、テーマを開発中のものに変更（初期ユーザー名`admin`、初期パス`password`）
 
 ## データベース更新するときの手順
 __1人での開発の場合は任意のタイミングで手順3と4を行えばOK__
