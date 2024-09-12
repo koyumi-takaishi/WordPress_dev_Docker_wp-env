@@ -15,6 +15,7 @@
   "mappings": {
     "wp-content/themes/themeName/": "./dist/",
     "wp-content/plugins/": "./plugins/",
+    "wp-content/uploads/": "./uploads/",
     "sql": "./sql"
   }
 }
