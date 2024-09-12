@@ -11,9 +11,10 @@
 3. style.cssの中身を任意の内容に変更する
 4. ターミナルを開き、`npm i`とコマンドを入力
 5. node_modulesとpackage-lock.jsonが生成されるのを確認する
-6. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
-7. `npx gulp`とコマンドを入力するとgulpが動き出す（gulpはブラウザシンク、scssコンパイル、画像圧縮の役割を担っている）
-8. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更（初期ユーザー名`admin`、初期パス`password`）
+6. 必要があれば.wp-env.jsonのWordPressのバージョン(2行目)とPHPのバージョン(3行目)を書き換える（本番環境と合わせておくと良い）
+7. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
+8. `npx gulp`とコマンドを入力するとgulpが動き出す（gulpはブラウザシンク、scssコンパイル、画像圧縮の役割を担っている）
+9. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更（初期ユーザー名`admin`、初期パス`password`）
 
 ## 使い方（既に開発が進んでいる状態からローカル環境構築を始める場合）
 1. クローンorダウンロードしたフォルダをvscode等で開く
