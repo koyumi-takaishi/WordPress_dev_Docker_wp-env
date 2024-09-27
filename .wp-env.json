@@ -13,9 +13,9 @@
     "WP_DEBUG": true
   },
   "mappings": {
-    "wp-content/themes/themeName/": "./dist/",
-    "wp-content/plugins/": "./plugins/",
-    "wp-content/uploads/": "./uploads/",
+    "wp-content/themes/gotenyama_koeikai/": "./dist/wp-content/themes/gotenyama_koeikai/",
+    "wp-content/plugins/": "./dist/wp-content/plugins/",
+    "wp-content/uploads/": "./dist/wp-content/uploads/",
     "sql": "./sql"
   }
 }

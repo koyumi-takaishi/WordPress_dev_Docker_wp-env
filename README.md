@@ -52,8 +52,8 @@ __1人での開発の場合は任意のタイミングで手順3と4を行えば
 - アプデした状態で再起動 `npm run wp-env start --update`  
 - データベースをエクスポート `npm run wp-env run cli wp db export sql/wpenv.sql`  
 - データベースをインポート `npm run wp-env run cli wp db import sql/wpenv.sql`
-- パッケージインストール　`npm i`
-- gulp起動　`npx gulp`
+- パッケージインストール `npm i`
+- gulp起動 `npx gulp`
 
 ## 備考
 - CSS設計はFLOCSS(https://github.com/hiloki/flocss )を採用
