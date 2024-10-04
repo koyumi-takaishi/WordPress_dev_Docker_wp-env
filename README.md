@@ -1,8 +1,7 @@
-# gulp-dev_wp-env_flocss_SPtoPC
+# WordPress_dev_Docker_wp-env
 
 ## 動作が確認できている環境
 - Nodeバージョン v16.13.0
-- Gulp 4系
 - Dockerインストール済み
 
 ## 使い方（ゼロからローカル環境構築を始める場合）
