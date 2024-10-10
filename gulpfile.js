@@ -4,7 +4,7 @@ const { src, dest, watch, series, parallel } = require("gulp");
 
 // 入出力先指定
 const srcBase = './src';
-const distBase = `./dist`;
+const distBase = `./dist/wp-content/themes/themeName`;
 const srcPath = {
   css: srcBase + '/sass/**/*.scss',
   img: srcBase + '/images/**/*',

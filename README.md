@@ -6,14 +6,16 @@
 
 ## 使い方（ゼロからローカル環境構築を始める場合）
 1. クローンorダウンロードしたフォルダをvscode等で開く
+2. dist/wp-content/themes/themeName/のthemeNameを任意のテーマ名に変更
 2. .wp-env.jsonの16行目のthemeNameを任意のテーマ名に変更
-3. style.cssの中身を任意の内容に変更する
-4. ターミナルを開き、`npm i`とコマンドを入力
-5. node_modulesとpackage-lock.jsonが生成されるのを確認する
-6. 必要があれば.wp-env.jsonのWordPressのバージョン(2行目)とPHPのバージョン(3行目)を書き換える（本番環境と合わせておくと良い）
-7. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
-8. `npx gulp`とコマンドを入力するとgulpが動き出す（gulpはブラウザシンク、scssコンパイル、画像圧縮の役割を担っている）
-9. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更（初期ユーザー名`admin`、初期パス`password`）
+3. 必要があれば.wp-env.jsonのWordPressのバージョン(2行目)とPHPのバージョン(3行目)を書き換える（本番環境と合わせておくと良い）
+4. gulpfile.jsの7行目のthemeNameを任意のテーマ名に変更
+5. style.cssの中身を任意の内容に変更する
+6. ターミナルを開き、`npm i`とコマンドを入力
+7. node_modulesとpackage-lock.jsonが生成されるのを確認する
+8. `npm run wp-env start`とコマンド入力し、wp-envを起動（WordPressの環境構築が行われる）
+9. `npx gulp`とコマンドを入力するとgulpが動き出す（gulpはブラウザシンク、scssコンパイル、画像圧縮の役割を担っている）
+10. WordPressの管理画面（/wp-admin）に入り、テーマをこれから開発するものに変更（初期ユーザー名`admin`、初期パス`password`）
 
 ## 使い方（既に開発が進んでいる状態からローカル環境構築を始める場合）
 1. クローンorダウンロードしたフォルダをvscode等で開く
@@ -42,8 +44,8 @@ __1人での開発の場合は任意のタイミングで手順3と4を行えば
 - sassの記述はsrcフォルダの中で行う
 - 画像はsrcフォルダのimagesの中に格納する
 - phpとjsはdist直下のファイルに直接記述する
-- プラグインは管理画面からインストールすると/dist/wp-content/plugins/に自動的に格納される
-- メディアは管理画面からアップロードすると/dist/wp-content/uploads/フォルダに自動的に格納される（ただし容量が増えすぎる場合はGitHub等で管理すべきでない。管理から外すときは.wp-env.jsonの18行目を消去する。）
+- プラグインは管理画面からインストールするとdist/wp-content/plugins/に自動的に格納される
+- メディアは管理画面からアップロードするとdist/wp-content/uploads/フォルダに自動的に格納される（ただし容量が増えすぎる場合はGitHub等で管理すべきでない。管理から外すときは.wp-env.jsonの18行目を消去する。）
 
 ## よく使うコマンドまとめ
 - wp-env起動 `npm run wp-env start`  
