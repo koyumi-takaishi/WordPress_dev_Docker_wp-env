@@ -1,5 +1,5 @@
-dist/assets/css/styles.css
-dist/assets/css/styles.css.map
-dist/assets/images/
+dist/wp-content/themes/themeName/assets/css/styles.css
+dist/wp-content/themes/themeName/assets/css/styles.css.map
+dist/wp-content/themes/themeName/assets/images/
 node_modules/
 package-lock.json
