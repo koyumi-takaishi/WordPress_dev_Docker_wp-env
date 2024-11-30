@@ -1,4 +1,5 @@
-@use 'sass:math';
+@use "sass:math";
+@use "sass:map";
 
 // インナー幅
 $innerWidth: 1024px;
@@ -24,15 +25,15 @@ $breakpoints: (
 
 // メディアクエリ
 $mediaquerys: (
-  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
-  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
-  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
-  xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+  sm: "screen and (min-width: #{map.get($breakpoints,'sm')}px)",
+  md: "screen and (min-width: #{map.get($breakpoints,'md')}px)",
+  lg: "screen and (min-width: #{map.get($breakpoints,'lg')}px)",
+  xl: "screen and (min-width: #{map.get($breakpoints,'xl')}px)",
 );
 
 // メディアクエリを "@include mq(){}" で書くことができる
 @mixin mq($mediaquery: md) {
-  @media #{map-get($mediaquerys, $mediaquery)} {
+  @media #{map.get($mediaquerys, $mediaquery)} {
     @content;
   }
 }
